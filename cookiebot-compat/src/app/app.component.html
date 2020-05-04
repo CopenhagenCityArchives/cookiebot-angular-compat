@@ -1,0 +1,12 @@
+<h1>CookiebotCompat</h1>
+
+<input type="text" [(ngModel)]="query" />
+<button (click)="getData()">Test Request</button>
+
+<div *ngIf="hits">
+  <div *ngFor="let hit of hits">
+    {{ hit._id }}
+  </div>
+</div>
+
+<router-outlet></router-outlet>
